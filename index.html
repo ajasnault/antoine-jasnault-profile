@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Antoine Jasnault — Supply Chain & Procurement Manager</title>
+<meta name="description" content="Antoine Jasnault — Supply Chain & Procurement Manager. CV, live product demos and GitHub repositories." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230d6e69%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 font-family=%22Arial%22 fill=%22white%22 text-anchor=%22middle%22>A</text></svg>" />
+<style>
+  :root {
+    --teal: #0d6e69;
+    --teal-dark: #0a5450;
+    --ink: #1a2b3c;
+    --muted: #5b6b74;
+    --line: #e2e8e6;
+    --bg: #ffffff;
+    --bg-alt: #f6f8f7;
+    --card: #ffffff;
+    --pill-bg: #eef4f3;
+    --shadow: 0 1px 2px rgba(16,40,38,0.06), 0 4px 16px rgba(16,40,38,0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --teal: #35a89f;
+      --teal-dark: #cdeeea;
+      --ink: #eef3f2;
+      --muted: #a9b8b5;
+      --line: #26332f;
+      --bg: #12181a;
+      --bg-alt: #171f21;
+      --card: #182022;
+      --pill-bg: #1d2a28;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--teal);
+  }
+  header.hero {
+    padding: 72px 0 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.hero h1 {
+    margin: 14px 0 4px;
+    font-size: clamp(32px, 5vw, 46px);
+    letter-spacing: -0.01em;
+  }
+  header.hero .role {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform 0.08s ease, box-shadow 0.15s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--teal); color: #ffffff; box-shadow: var(--shadow); }
+  .btn-primary:hover { background: var(--teal-dark); }
+  .btn-secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-secondary:hover { border-color: var(--teal); color: var(--teal); }
+  section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--teal);
+    margin: 0 0 20px;
+  }
+  .profile p,
+  .why p {
+    font-size: 17px;
+    color: var(--ink);
+    max-width: 68ch;
+  }
+  .why p + p { margin-top: 16px; }
+  .projects { display: grid; gap: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+  }
+  .card h3 { margin: 0 0 6px; font-size: 20px; }
+  .card .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--teal-dark);
+    background: var(--pill-bg);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .card p { color: var(--muted); margin: 0 0 18px; font-size: 15.5px; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .card .links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--teal);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 7px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card .links a:hover { border-color: var(--teal); background: var(--pill-bg); }
+  .hint {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill {
+    background: var(--pill-bg);
+    color: var(--teal-dark);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 999px;
+  }
+  footer {
+    padding: 40px 0 60px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  .footer-row { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+  .icon { width: 16px; height: 16px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Supply Chain &amp; Warehouse Operations</div>
+    <h1>Antoine Jasnault</h1>
+    <p class="role">Warehouse · Inventory · Cold-Chain · Automation — Biotech &amp; Pharma</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="assets/CV_Antoine_Jasnault.pdf" target="_blank" rel="noopener">
+        Download CV (PDF)
+      </a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/antoine-jasnault" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+      <a class="btn btn-secondary" href="mailto:a_jasnault@hotmail.com">
+        Email
+      </a>
+    </div>
+  </header>
+
+  <section class="profile">
+    <h2>Profile</h2>
+    <p>
+      Supply chain professional with 15+ years in pharma and biotech — comfortable in
+      technical, science-led, cGMP environments — who also builds. I recently built and
+      deployed a full warehouse management system from scratch, using Python, no-code and
+      Claude Code, to automate receiving, tracking and reconciliation in a cGMP biotech
+      warehouse. I've also run a business end-to-end as a founder, hands-on across
+      sourcing, inventory and operations. I'm obsessive about lead times, expiry dates,
+      traceability and MOQs, and I know cold-chain, temperature-controlled logistics,
+      customs and landed cost into Switzerland inside out. Ready to own a warehouse or
+      supply chain from zero and grow it with the science.
+    </p>
+  </section>
+
+  <section class="why">
+    <h2>What I'm looking for</h2>
+    <p>
+      I want to stay in pharma and biotech. It's a world I like, and after fifteen years
+      I know how it works. But I miss building something of my own, the way I did when I
+      ran my own business for seven years: owning the operation end-to-end, hands-on,
+      and fixing whatever nobody else was going to fix.
+    </p>
+    <p>
+      I'm looking for that combination again — a supply chain or warehouse function I
+      can own hands-on, ideally one still being built or in need of rebuilding, inside a
+      company with real resources and a team behind it. An entrepreneur's project inside
+      a company that is already moving fast.
+    </p>
+    <p>
+      I'm not a scientist and I won't pretend to be one. What I bring is fifteen years of
+      pharma and biotech supply chain, a founder's habit of owning the whole thing, and the
+      reflex to build my own tools when a process needs it. I learn a new product or
+      reagent category fast, and I enjoy that part of the job.
+    </p>
+  </section>
+
+  <section class="built">
+    <h2>What I've built</h2>
+    <div class="projects">
+
+      <div class="card">
+        <span class="tag">Production · Merck, Aubonne</span>
+        <h3>Warehouse Management System</h3>
+        <p>
+          A live WMS built from requirements to production — receiving, tracking and
+          reconciliation for a cGMP biotech warehouse, replacing manual portal and
+          spreadsheet work. Result: 0 late shipments and 0 human-error deviations over
+          6 months in operation.
+        </p>
+        <div class="links">
+          <a href="https://ajasnault.github.io/wms-claude-code/" target="_blank" rel="noopener">↗ Live demo</a>
+          <a href="https://github.com/ajasnault/wms-claude-code" target="_blank" rel="noopener">⌥ GitHub repo</a>
+        </div>
+        <p class="hint">
+          On the sign-in screen, click <strong>"Voir la démo (visiteur)"</strong> for
+          instant full admin access — no account needed.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Personal project</span>
+        <h3>Operating Room Capacity Simulator</h3>
+        <p>
+          A discrete-event simulation of a hospital operating-room block (rooms, recovery
+          beds, staff) with a Swiss-franc cost module, used to arbitrate capacity
+          trade-offs — e.g. is it better to add an operating room, or add recovery beds
+          downstream? Illustrates a classic bottleneck: SSPI/recovery capacity can
+          throttle throughput more than the operating rooms themselves.
+        </p>
+        <div class="links">
+          <a href="https://bloc-simulateur.streamlit.app/" target="_blank" rel="noopener">↗ Live demo</a>
+          <a href="https://github.com/ajasnault/bloc-simulateur" target="_blank" rel="noopener">⌥ GitHub repo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="competencies">
+    <h2>Core competencies</h2>
+    <div class="pills">
+      <span class="pill">Biotech &amp; pharma supply chain</span>
+      <span class="pill">Warehouse operations &amp; cGMP receiving</span>
+      <span class="pill">Cold-chain &amp; temperature-controlled logistics</span>
+      <span class="pill">Inventory policy &amp; safety stock</span>
+      <span class="pill">Demand / supply planning</span>
+      <span class="pill">Planning &amp; capacity management</span>
+      <span class="pill">ERP / WMS &amp; process automation</span>
+      <span class="pill">Landed cost · customs · VAT</span>
+      <span class="pill">Procurement &amp; supplier sourcing</span>
+      <span class="pill">Python · Claude Code · APIs</span>
+      <span class="pill">Lean Six Sigma (Green Belt)</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-row">
+      <span>Lausanne, Switzerland</span>
+      <a href="mailto:a_jasnault@hotmail.com">a_jasnault@hotmail.com</a>
+      <a href="tel:+41787346993">+41 78 734 69 93</a>
+      <a href="https://www.linkedin.com/in/antoine-jasnault" target="_blank" rel="noopener">linkedin.com/in/antoine-jasnault</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  fetch("https://ipwho.is/")
+    .then(function (r) { return r.json(); })
+    .catch(function () { return null; })
+    .then(function (geo) {
+      var location = "Unknown";
+      if (geo && geo.success !== false) {
+        location = [geo.city, geo.region, geo.country].filter(Boolean).join(", ") +
+          " (" + geo.latitude + ", " + geo.longitude + ")";
+      }
+      fetch("https://ntfy.sh/aj-visit-profile-520rKWFAHd6ZNw", {
+        method: "POST",
+        headers: { Title: "Profile minisite visit" },
+        body: "New visit\nWhen: " + new Date().toISOString() +
+          "\nLocation: " + location +
+          "\nReferrer: " + (document.referrer || "(direct)") +
+          "\nUA: " + navigator.userAgent,
+      }).catch(function () {});
+    });
+</script>
+</body>
+</html>
